@@ -27,7 +27,13 @@ const LandingPage = () => {
                 <Text fontSize="xl" marginBottom="1.5rem">
                   [INSERT SUBHEADLINE HERE]
                 </Text>
-                <Button colorScheme="blue">[INSERT BUTTON TEXT HERE]</Button>
+                <Button
+                  as="a"
+                  href="/credit-application"
+                  colorScheme="blue"
+                >
+                  [INSERT BUTTON TEXT HERE]
+                </Button>
               </GridItem>
               <GridItem>
                 <Box position="relative" height={{ base: "200px", md: "100%" }} backgroundColor="gray.200">
@@ -93,9 +99,16 @@ const LandingPage = () => {
               [INSERT CONVERSION SECTION TITLE]
             </Heading>
             <Text marginBottom="1.5rem">
-              Copy emphasizing instant credit application, trust-building, and clear instructions. Make the conversion easy and quick.
+              Copy emphasizing instant credit application, trust-building, and clear instructions to drive conversion.
             </Text>
-            <Button colorScheme="green" size="lg">APPLY NOW</Button>
+            <Button
+              as="a"
+              href="/credit-application"
+              colorScheme="green"
+              size="lg"
+            >
+              APPLY NOW
+            </Button>
           </Box>
         </Box>
       </DefaultLayout>
