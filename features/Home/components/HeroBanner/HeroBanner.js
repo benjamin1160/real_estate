@@ -41,7 +41,7 @@ const HeroBanner = () => {
               lineHeight="shorter"
               marginBottom="1.5rem"
             >
-              Download our new <strong>Property Buying Guide </strong>
+              Download our new <strong>Home Buying Guide </strong>
               today ...
             </Text>
             <Text fontSize={{ base: "lg", sm: "2xl" }}>
