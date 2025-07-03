@@ -43,9 +43,9 @@ To get started, follow these steps:
    ```
 
 3. **Set Up Environment Variables:**
-   Create a `.env` file in the root of your project and add the following, replacing `[YOUR_API_KEY]` with your Rapid API key eg: `"b71bf074camsh74d8c0..."`:
+   Create a `.env` file in the root of your project and add the following:
    ```env
-   RAPID_API_KEY=[YOUR_API_KEY]
+   RAPID_API_KEY=1c6b1d82ddmshc2f590841aed013p159c4fjsnae930d747fa5
    ```
 
 4. **Run the Development Server:**
@@ -95,9 +95,9 @@ This project can be deployed to platforms like Vercel or Netlify, ensuring a sea
 
 In both local development and deployment, ensure you set the following environment variable:
 
-- **Local Development:** Create a `.env` file in the root of your project and add the following, replacing `[YOUR_API_KEY]` with your Rapid API key:
+- **Local Development:** Create a `.env` file in the root of your project and add the following:
   ```env
-  RAPID_API_KEY=[YOUR_API_KEY]
+  RAPID_API_KEY=1c6b1d82ddmshc2f590841aed013p159c4fjsnae930d747fa5
   ```
 
 - **Deployment:** Set the `RAPID_API_KEY` environment variable in your deployment environment.
