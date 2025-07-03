@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 import DefaultLayout from "@/features/Layouts/DefaultLayout";
 import TextContentBox from "@/features/common/modules/TextContentBox";
 import {
@@ -11,6 +12,12 @@ import {
   List,
   ListItem
 } from "@chakra-ui/react";
+
+// Recommended CSS structure:
+// - Use white (#ffffff) backgrounds and ample spacing for a clean layout.
+// - Rely on Chakra UI's responsive props (e.g., `base`, `sm`) to stack elements
+//   on mobile and present a 50/50 split on larger screens.
+// - Keep components lightweight to ensure fast loading.
 
 const LandingPage = () => {
   return (
@@ -42,9 +49,11 @@ const LandingPage = () => {
                 <Text fontSize={{ base: "lg", sm: "xl" }} marginBottom="2rem">
                   [INSERT SUBHEADLINE HERE]
                 </Text>
-                <Button colorScheme="blue" width="fit-content">
-                  [INSERT BUTTON TEXT HERE]
-                </Button>
+                <Link href="/credit-application" passHref>
+                  <Button as="a" colorScheme="blue" width="fit-content">
+                    [INSERT BUTTON TEXT HERE]
+                  </Button>
+                </Link>
               </Flex>
             </GridItem>
             {/* Video */}
@@ -143,9 +152,11 @@ const LandingPage = () => {
               Conversion starts here. Apply instantly with our trusted credit
               application and follow the clear instructions below.
             </Text>
-            <Button colorScheme="blue" size="lg">
-              APPLY NOW
-            </Button>
+            <Link href="/credit-application" passHref>
+              <Button as="a" colorScheme="blue" size="lg">
+                APPLY NOW
+              </Button>
+            </Link>
           </Box>
         </Box>
       </DefaultLayout>
