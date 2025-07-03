@@ -10,7 +10,7 @@ import {
   Button,
   Flex,
   List,
-  ListItem
+  ListItem,
 } from "@chakra-ui/react";
 
 // Recommended CSS structure:
@@ -95,7 +95,12 @@ const LandingPage = () => {
             <Text as="h2" fontSize="3xl" marginBottom="1rem">
               Are you sick of…
             </Text>
-            <List spacing={3} fontSize="lg" styleType="disc" paddingLeft="1.5rem">
+            <List
+              spacing={3}
+              fontSize="lg"
+              styleType="disc"
+              paddingLeft="1.5rem"
+            >
               <ListItem>[PAIN POINT 1]</ListItem>
               <ListItem>[PAIN POINT 2]</ListItem>
               <ListItem>[PAIN POINT 3]</ListItem>
@@ -109,7 +114,12 @@ const LandingPage = () => {
             <Text as="h2" fontSize="3xl" marginBottom="1rem">
               [INSERT SOLUTIONS TITLE HERE]
             </Text>
-            <List spacing={3} fontSize="lg" styleType="disc" paddingLeft="1.5rem">
+            <List
+              spacing={3}
+              fontSize="lg"
+              styleType="disc"
+              paddingLeft="1.5rem"
+            >
               <ListItem>Solution One: [INSERT SHORT DESCRIPTION]</ListItem>
               <ListItem>Solution Two: [INSERT SHORT DESCRIPTION]</ListItem>
               <ListItem>Solution Three: [INSERT SHORT DESCRIPTION]</ListItem>
@@ -144,7 +154,12 @@ const LandingPage = () => {
 
         {/* Conversion Section */}
         <Box backgroundColor="#ffffff" paddingY={{ base: "2rem", sm: "4rem" }}>
-          <Box maxWidth="1280px" margin="0 auto" paddingX="2rem" textAlign="center">
+          <Box
+            maxWidth="1280px"
+            margin="0 auto"
+            paddingX="2rem"
+            textAlign="center"
+          >
             <Text as="h2" fontSize="3xl" marginBottom="1rem">
               [INSERT CONVERSION SECTION TITLE]
             </Text>
