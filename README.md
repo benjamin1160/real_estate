@@ -43,7 +43,7 @@ To get started, follow these steps:
    ```
 
 3. **Set Up Environment Variables:**
-   Create a `.env` file in the root of your project and add the following, replacing `[YOUR_API_KEY]` with your Rapid API key eg: `"b71bf074camsh74d8c0..."`:
+   Use the provided `.env.local.txt` as a template for your environment variables. Copy or rename this file to `.env` and replace the placeholder value with your Rapid API key, e.g. `"b71bf074camsh74d8c0..."`:
    ```env
    RAPID_API_KEY=[YOUR_API_KEY]
    ```
@@ -101,6 +101,31 @@ In both local development and deployment, ensure you set the following environme
   ```
 
 - **Deployment:** Set the `RAPID_API_KEY` environment variable in your deployment environment.
+
+### RapidAPI Usage Example
+
+The application fetches property data from the Bayut API on RapidAPI. The helper functions replicate the standard RapidAPI request format. Below is a simplified example from `features/common/api/getProperties.js`:
+
+```javascript
+import axios from "axios";
+
+const options = {
+  method: "GET",
+  url: "https://bayut.p.rapidapi.com/properties/list",
+  params: {
+    locationExternalIDs: "5002,6020",
+    purpose: "for-sale",
+    hitsPerPage: 5,
+    lang: "en",
+  },
+  headers: {
+    "X-RapidAPI-Key": process.env.RAPID_API_KEY,
+    "X-RapidAPI-Host": "bayut.p.rapidapi.com",
+  },
+};
+
+axios.request(options).then((res) => console.log(res.data));
+```
 
 ## Contributing
 
